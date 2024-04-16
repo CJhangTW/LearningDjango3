@@ -12,3 +12,5 @@ def yearPage(request,year):
     else:
         return HttpResponse("Year must be a four-digit number", status=404)
 
+def index(request):
+    return render(request, 'index.html')
