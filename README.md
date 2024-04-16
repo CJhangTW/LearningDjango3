@@ -33,6 +33,11 @@ py manage.py createsuperuser
 
 ## 啟動伺服器
 
-py manage.py runserver
+py manage.py runserver localhost:8000
+
+
+
+
+
 
 
