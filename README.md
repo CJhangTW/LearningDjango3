@@ -12,7 +12,7 @@ py -m pip install --upgrade pip # 升級pip套件
 
 pip freeze #列出所有已安裝套件
 pip install Django
-pip install –r requirements.txt #常見相依性套件安裝方法
+pip install -r requirements.txt #常見相依性套件安裝方法
 
 pip freeze > requirements.txt #相依性套件輸出
 

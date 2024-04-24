@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+import datetime
 
 
 def adminPage(request,name):
@@ -13,4 +14,18 @@ def yearPage(request,year):
         return HttpResponse("Year must be a four-digit number", status=404)
 
 def index(request):
-    return render(request, 'index.html')
+    timezone = datetime.timezone(datetime.timedelta(hours=8))
+    data = {'dt':datetime.datetime.now(tz = timezone),
+            'dz':timezone
+            
+            }
+    return render(request, 'index.html', data)
+
+
+""""
+
+def index(request):
+    dt = datetime.now()
+    return render(request, 'index.html', locals())
+
+"""
