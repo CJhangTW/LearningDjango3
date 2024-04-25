@@ -10,7 +10,7 @@
   {% if user.is_authenticated %}
   <p>您好，{{ user.username }}！</p>
   {% else %}
-  <p>請先登入<a href="{% url 'admin:index' %}">Admin Login</a></p>
+  <p>請先登入 <a href="{% url 'admin:index' %}">Admin Login</a></p>
   {% endif %}
   <p>現在時間是 {{dt}} ({{dz}})</p>
   </body>
