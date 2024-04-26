@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/<str:name>/', views.adminPage), #測試 <str:name>
     path('<int:year>/', views.yearPage), #測試 <int:year>
     path('', views.index, name='index'),
-    path('ig/', include('ig.urls'))
+    path('ig/', include('ig.urls'), name="ig"),
 ]
